@@ -37,10 +37,8 @@ export function HeroSection() {
               <p className="font-mono text-[#00D4FF] text-sm tracking-wider mb-4">
                 Hello !!!
               </p>
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
-                {"I'm Satyajit"}
-                <br />
-                Behera
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
+                {"I'm Satyajit Behera"}
               </h1>
             </div>
 

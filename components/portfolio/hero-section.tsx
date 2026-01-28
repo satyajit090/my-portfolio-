@@ -5,8 +5,8 @@ export function HeroSection() {
   return (
     <section className="relative overflow-hidden noise-bg bg-gradient-to-br from-[#0a0a12] via-[#0d0d18] to-[#0a0a12]">
       {/* Gradient glows */}
-      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-purple-600/20 rounded-full blur-[150px] pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-cyan-500/15 rounded-full blur-[120px] pointer-events-none" />
+      {/* <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-purple-600/20 rounded-full blur-[150px] pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-cyan-500/15 rounded-full blur-[120px] pointer-events-none" /> */}
       
       <div className="max-w-7xl mx-auto px-6 lg:px-8 pt-24 pb-16 w-full">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -51,10 +51,7 @@ export function HeroSection() {
             </div>
 
             <p className="text-white/70 text-lg leading-relaxed max-w-xl">
-              I craft scalable backend systems and cloud-native applications 
-              that power modern enterprises. With expertise in microservices 
-              architecture and AWS, I transform complex requirements into 
-              elegant, high-performance solutions.
+            I specialize in developing scalable backend systems and cloud-native applications for modern enterprises. Leveraging microservices architecture and AWS, I turn complex technical challenges into robust, efficient, and high-performance solutions.
             </p>
 
             {/* Social Links */}

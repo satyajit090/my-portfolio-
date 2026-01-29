@@ -4,35 +4,12 @@ import { Github, Linkedin, Mail } from "lucide-react";
 export function HeroSection() {
   return (
     <section className="relative overflow-hidden noise-bg bg-gradient-to-br from-[#0a0a12] via-[#0d0d18] to-[#0a0a12]">
-      {/* Gradient glows */}
-      {/* <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-purple-600/20 rounded-full blur-[150px] pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-cyan-500/15 rounded-full blur-[120px] pointer-events-none" /> */}
-      
+
       <div className="max-w-7xl mx-auto px-6 lg:px-8 pt-24 pb-16 w-full">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left - Photo */}
-          <div className="relative order-2 lg:order-1">
-            <div className="relative w-full max-w-md mx-auto lg:mx-0">
-              {/* Dot pattern decoration */}
-              <div className="absolute -top-8 -right-8 w-32 h-32 dot-pattern opacity-60" />
-              
-              {/* Profile Image */}
-              <div className="relative aspect-[3/4] w-full max-w-sm mx-auto">
-                <Image
-                  src="/images/image.png"
-                  alt="Satyajit Behera"
-                  fill
-                  className="object-cover object-top rounded-lg grayscale"
-                  priority
-                />
-                {/* Gradient overlay at bottom */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a12] via-transparent to-transparent" />
-              </div>
-            </div>
-          </div>
 
-          {/* Right - Content */}
-          <div className="order-1 lg:order-2 space-y-8">
+          {/* LEFT - CONTENT */}
+          <div className="order-2 lg:order-1 space-y-8">
             <div>
               <p className="font-mono text-[#00D4FF] text-sm tracking-wider mb-4">
                 Hello !!!
@@ -49,7 +26,10 @@ export function HeroSection() {
             </div>
 
             <p className="text-white/70 text-lg leading-relaxed max-w-xl">
-            I specialize in developing scalable backend systems and cloud-native applications for modern enterprises. Leveraging microservices architecture and AWS, I turn complex technical challenges into robust, efficient, and high-performance solutions.
+              I specialize in developing scalable backend systems and cloud-native
+              applications for modern enterprises. Leveraging microservices
+              architecture and AWS, I turn complex technical challenges into
+              robust, efficient, and high-performance solutions.
             </p>
 
             {/* Social Links */}
@@ -63,6 +43,7 @@ export function HeroSection() {
               >
                 <Linkedin size={20} />
               </a>
+
               <a
                 href="https://github.com"
                 target="_blank"
@@ -72,6 +53,7 @@ export function HeroSection() {
               >
                 <Github size={20} />
               </a>
+
               <a
                 href="mailto:beherasatyajit090@gmail.com"
                 className="p-3 rounded-full border border-[#00D4FF]/30 text-[#00D4FF] hover:bg-[#00D4FF]/10 transition-colors"
@@ -81,6 +63,28 @@ export function HeroSection() {
               </a>
             </div>
           </div>
+
+          {/* RIGHT - PHOTO */}
+          <div className="relative order-1 lg:order-2">
+            <div className="relative w-full max-w-md mx-auto lg:mx-0">
+
+              {/* Dot pattern decoration */}
+              <div className="absolute -top-8 -right-8 w-32 h-32 dot-pattern opacity-60" />
+
+              {/* Profile Image */}
+              <div className="relative aspect-[3/4] w-full max-w-sm mx-auto">
+                <Image
+                  src="/images/image.png"
+                  alt="Satyajit Behera"
+                  fill
+                  className="object-cover object-top rounded-lg grayscale"
+                  priority
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a12] via-transparent to-transparent" />
+              </div>
+            </div>
+          </div>
+
         </div>
 
         {/* Bottom Stats */}
@@ -99,6 +103,7 @@ export function HeroSection() {
           <div className="w-2 h-2 rounded-full border border-white/40" />
         </div>
       </div>
+
     </section>
   );
 }
@@ -108,7 +113,9 @@ function StatBadge({ value, label }: { value: string; label: string }) {
     <div className="px-6 py-3 rounded-full border border-white/20 bg-white/5 backdrop-blur-sm">
       <div className="flex items-center gap-3">
         <span className="font-mono text-xl font-bold text-white">{value}</span>
-        <span className="font-mono text-xs text-white/60 tracking-wider">{label}</span>
+        <span className="font-mono text-xs text-white/60 tracking-wider">
+          {label}
+        </span>
       </div>
     </div>
   );

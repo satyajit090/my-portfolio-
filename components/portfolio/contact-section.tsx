@@ -24,12 +24,12 @@ export function ContactSection() {
 
         {/* Contact Cards - Row 1 */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto mb-6">
-          <ContactCard
+          {/* <ContactCard
             icon={<Phone className="w-7 h-7" />}
             title="Phone & Mobile"
             value="+91 8847816440"
             href="tel:+918847816440"
-          />
+          /> */}
           <ContactCard
             icon={<Mail className="w-7 h-7" />}
             title="Email"
@@ -46,6 +46,12 @@ export function ContactSection() {
             title="LinkedIn"
             value="@satyajit-behera"
             href="https://linkedin.com/in/satyajit-behera-5447621a0"
+          />
+          <ContactCard
+            icon={<Github className="w-7 h-7" />}
+            title="GitHub"
+            value="@satyajit090"
+            href="https://github.com/satyajit090"
           />
         </div>
 

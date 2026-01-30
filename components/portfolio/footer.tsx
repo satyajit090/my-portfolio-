@@ -13,7 +13,7 @@ export function Footer() {
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           
           <p className="font-mono text-white/50 text-sm tracking-[0.2em]">
-            PORTFOLIO 2025
+          
           </p>
           <p className="text-white/40 text-sm">
             Designed & Built by Satyajit Behera
